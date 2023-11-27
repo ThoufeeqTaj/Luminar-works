@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUDGET CALCULATOR HOME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: rgb(31, 32, 82);">
+    <div class="row">
+        <div class="col-12">
+            <marquee behavior="alternate" direction="left" style="font-size: xx-large; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(220, 217, 222);">WELCOME TO BUDGET GENIE💵</marquee>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-4">
+
+
+            <img src="https://media2.giphy.com/media/F8OSEfMHLFmKHsX4yX/200w.webp?cid=ecf05e472uvphktnn8algb8f9nbtcrw8ehpd69ajuut1a1oi&ep=v1_stickers_search&rid=200w.webp&ct=s" height="300px" width="100%" alt="">
+        </div>
+        <div class="col-4 mt-5">
+           <h1 class="text-center text-danger">BUDGET GENIE💵 </h1>
+            <p style="color: rgb(240, 237, 232); text-align: justify;">The Budget Calculator evaluates the components of a personal budget and highlights which specific areas need improvement.</p>
+        <p style="color: rgb(228, 222, 216); text-align: justify;">This calculator uses the 50/30/20 budget to suggest how much of your monthly income to allocate to needs, wants and savings.</p>
+        
+        </div>
+        
+        <div class="col-4">
+            <img src="https://media4.giphy.com/media/VInm3cbzu3DEDQ4alX/200w.webp?cid=ecf05e47arrktad4wfw6jcullofnqy5vh4xz8kru104fznju&ep=v1_stickers_search&rid=200w.webp&ct=s" width="100%" height="300px" alt="">
+        </div>
+    </div>
+    <hr style="color: rgb(17, 17, 17);">
+    <div class="row mt-5">
+        <div class="col-6">
+          
+            <center><button onclick="calc()">
+                <h3 style="color: brown;">REGISTER</h3><br>
+                <img src="data:image/png;base64,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" width="100%" height="200px" alt=""></button></center><br>
+                
+        </div>
+        <div class="col-6"><center><button onclick="calcs()">
+            <h3 style="color: brown;">LOGIN</h3><br>
+            <img src="https://www.freeiconspng.com/thumbs/login-icon/login-system-icon-13.png" width="100%" height="200px" alt="">
+        
+        </button></center></div>
+    </div>
+</body>
+<script src="./home.js"></script>
+</html>
